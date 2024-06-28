@@ -15,4 +15,10 @@
     </style>
 
     <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
+
+    <style name="ToolbarTitleText">
+        <item name="android:textSize">20sp</item> <!-- 设置文字大小 -->
+        <item name="android:textColor">#FFFFFF</item> <!-- 设置文字颜色 -->
+        <!-- 其他字体样式设置 -->
+    </style>
 </resources>
