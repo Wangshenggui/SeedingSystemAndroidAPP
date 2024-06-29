@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" /> <!-- 添加网络权限 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- 添加前台服务权限 -->
 
     <application
         android:allowBackup="true"
@@ -15,6 +16,7 @@
         android:theme="@style/Theme.MyApplication"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+
         <activity
             android:name=".MotorControlActivity"
             android:exported="false"
@@ -25,10 +27,16 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".WebSocketService"
+            android:foregroundServiceType="connectedDevice"
+            android:exported="false"
+            tools:ignore="ForegroundServicePermission" />
+
     </application>
 
 </manifest>

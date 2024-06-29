@@ -17,8 +17,7 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/ic_back"
-         /> <!-- 添加这一行 -->
+        app:navigationIcon="@drawable/ic_back" /> <!-- 添加这一行 -->
 
 
     <TextView
